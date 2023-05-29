@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+    android:icon="@drawable/outline_home_24"
+    android:id="@+id/homeFragment"
+    android:title="@string/home"/>
+    <item
+        android:icon="@drawable/investment"
+        android:id="@+id/donateFragment"
+
+        android:title="@string/donate"/>
+    <item
+        android:icon="@drawable/arrow_circle_down_left"
+        android:id="@+id/receiveFragment"
+        android:title="@string/receive"/>
+
+    <item
+        android:icon="@drawable/baseline_person_outline_24"
+        android:id="@+id/profileFragment"
+        android:title="@string/profile"/>
+
+
+</menu>

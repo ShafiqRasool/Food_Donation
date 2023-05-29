@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/g"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DonateFragment">
+
+    <TextView
+        android:id="@+id/TestViewHeaderDoner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Please fill this form"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:divider="@drawable/linear_layout_divider"
+        android:dividerPadding="0dp"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/TestViewHeaderDoner">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DonnerNameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:elevation="10dp"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:startIconDrawable="@drawable/baseline_person_outline_24"
+            app:startIconTint="@color/LightBlue"
+
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/DonnerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DonnerPhoneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:elevation="5dp"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:startIconDrawable="@drawable/outline_phone_24"
+            app:startIconTint="@color/LightBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/DonnerPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DonnerAddressLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:elevation="5dp"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:startIconDrawable="@drawable/baseline_person_outline_24"
+            app:startIconTint="@color/LightBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/DonnerAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/DonnerFoodLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:elevation="5dp"
+            app:boxCornerRadiusBottomEnd="3dp"
+            app:boxCornerRadiusBottomStart="3dp"
+            app:boxCornerRadiusTopEnd="3dp"
+            app:boxCornerRadiusTopStart="3dp"
+            app:startIconDrawable="@drawable/outline_fastfood_24"
+            app:startIconTint="@color/LightBlue">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/FoodType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Food name / Food Type" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="5dp"
+                android:text="This food can serve how many people"
+                android:textColor="@color/LightBlue"
+                android:textStyle="bold" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="No Of People"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="1"
+                    android:minWidth="50dp"
+                    android:orientation="horizontal"
+                    >
+
+
+
+                    <AutoCompleteTextView
+                        android:id="@+id/noOfPeople"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="none"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/getImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="5dp"
+        android:drawableEnd="@drawable/outline_cloud_upload_24"
+        android:drawableTint="@color/white"
+        android:minHeight="80dp"
+        android:text="Upload Image"
+        android:textAlignment="viewEnd"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.46"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

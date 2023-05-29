@@ -3,6 +3,9 @@
     <style name="Base.Theme.FoodDonation" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/LightBlue</item>
+        <item name="colorAccent">@color/DarkYellow</item>
+        
 
     </style>
 
