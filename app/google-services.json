@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "899446526055",
-    "project_id": "food-management-app-9d3cc",
-    "storage_bucket": "food-management-app-9d3cc.appspot.com"
+    "project_number": "885744208548",
+    "project_id": "food-management-13fa3",
+    "storage_bucket": "food-management-13fa3.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:899446526055:android:d27984ffb241c1bfc084c2",
+        "mobilesdk_app_id": "1:885744208548:android:9af437eef50e62222d7431",
         "android_client_info": {
           "package_name": "com.riphah.food"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAcADJR-pEzX_xCctlj2QKNeXZ5qeEmLds"
+          "current_key": "AIzaSyD9yB0o_OqFuVRx1Sz0wcETCLXJib4eT1c"
         }
       ],
       "services": {

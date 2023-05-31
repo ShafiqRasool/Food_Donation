@@ -48,7 +48,7 @@ class SignupFragment : Fragment() {
         binding.buttonCreateAccount.setOnClickListener {
             val name:String=binding.UserNameEditText.text.toString().trim()
             val email:String=binding.UserEmailEditText.text.toString().trim()
-            val password:String=binding.UserPasswordEditText.toString().trim()
+            val password:String=binding.UserPasswordEditText.text.toString().trim()
 
             if(name.isNotEmpty()){
 
