@@ -6,11 +6,6 @@
     app:startDestination="@id/homeFragment">
 
     <fragment
-        android:id="@+id/donateFragment"
-        android:name="com.riphah.food.ui.DonateFragment"
-        android:label="fragment_donate"
-        tools:layout="@layout/fragment_donate" />
-    <fragment
         android:id="@+id/profileFragment"
         android:name="com.riphah.food.ui.ProfileFragment"
         android:label="fragment_profile"
@@ -25,4 +20,9 @@
         android:name="com.riphah.food.ui.ReceiveFragment"
         android:label="fragment_receive"
         tools:layout="@layout/fragment_receive" />
+    <fragment
+        android:id="@+id/receiverListFragment"
+        android:name="com.riphah.food.ui.ReceiverListFragment"
+        android:label="fragment_receiver_list"
+        tools:layout="@layout/fragment_receiver_list" />
 </navigation>
